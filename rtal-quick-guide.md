@@ -1,5 +1,5 @@
 # Guida rapida all'utilizzo di rtal
-**N.B:** ad oggi per fare login sul sistema è necessario scaricare rtal versione 0.2.0 perché altre versioni non permettono l'autenticazione verso il server.
+**N.B:** ad oggi per fare login sul sistema è necessario scaricare rtal versione 0.2.0 perché le altre versioni non permettono l'autenticazione verso il server.
 
 - Per installare rtal:
 ```sh
