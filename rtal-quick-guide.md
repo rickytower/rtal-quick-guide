@@ -14,6 +14,7 @@ La lista dei server è:
 - algo
 - esercizi
 - esame
+  
 da anteporre al link ad esempio ``wss://ta.di.univr.it/*nome_server*``
 - Login su rtal
 ``` sh
