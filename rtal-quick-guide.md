@@ -5,7 +5,7 @@
 ```sh
 mkdir -p ~/.local/bin && cd ~/.local/bin && wget https://github.com/Guilucand/rtal-algo-client/releases/download/V1.0.1/rtal-x86_64-unknown-linux-gnu.tar.gz && tar -xf rtal-x86_64-unknown-linux-gnu.tar.gz && rm rtal-x86_64-unknown-linux-gnu.tar.gz && chmod +x rtal && cd ~
 ```
-- Per disinstallare rtal
+- Per disinstallare rtal:
 ```sh
 rm ~/.local/bin/rtal
 ```
@@ -15,39 +15,42 @@ La lista dei server è:
 - esercizi
 - esame
   
-da anteporre al link ad esempio ``wss://ta.di.univr.it/*nome_server*``
-- Login su rtal
+da anteporre al link ad esempio ``wss://ta.di.univr.it/nome_server``
+- Login su rtal:
 ``` sh
 rtal -s wss://ta.di.univr.it/algo login
 ```
 
-- Lista dei problemi
+- Lista dei problemi:
 ``` sh
 rtal -s wss://ta.di.univr.it/algo list
 ```
 
-- Scarica un problema dal server
+- Scarica un problema dal server:
 
 ```sh
-rtal -s wss://ta.di.univr.it/algo get *problema*
+rtal -s wss://ta.di.univr.it/algo get nome_problema
 ```
 
-- Scarica scoreboard dal server
+- Scarica scoreboard dal server:
 
 ```sh
 rtal -s wss://ta.di.univr.it/algo get scoreboard
 ```
-- Estrai un archivio **.tar**
+- Estrai un archivio **.tar**:
 ```sh
 tar -xf nome_archivio.tar
 ```
-- Sottometti una soluzione
+- Sottometti una soluzione:
 ```sh
-rtal -s wss://ta.di.univr.it/algo connect [nome problema] [-a size=dimensione problema] -f source=[sorgente] -- [lancia binario come ./a.out o python3 sorgente.py]
+rtal -s wss://ta.di.univr.it/algo connect nome_problema [-a size=dimensione problema] -f source=nome_sorgente -- comando_esecuzione_binario
 ```
-
-- Utilizza synopsis
+dove comando_esecuzione_binario può essere una tra le seguenti opzioni:
+  - ``./a.out`` per programmi compilati
+  - ``python3 nome_sorgente.py`` o simili per programmi interpretati
+    
+- Utilizza synopsis:
 
 ```sh
-rtal -s wss://ta.di.univr.it/algo connect [nome problema] -f source=[sorgente]
+rtal -s wss://ta.di.univr.it/algo connect nome_problema -f source=nome_sorgente
 ```
