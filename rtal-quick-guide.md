@@ -3,7 +3,7 @@
 
 - Per installare rtal:
 ```sh
-mkdir -p ~/.local/bin && cd ~/.local/bin && wget https://github.com/Guilucand/rtal-algo-client/releases/download/V1.0.1/rtal-x86_64-unknown-linux-gnu.tar.gz && tar -xf *.tar && rm *.tar && chmod +x rtal && cd ~
+mkdir -p ~/.local/bin && cd ~/.local/bin && wget https://github.com/Guilucand/rtal-algo-client/releases/download/V1.0.1/rtal-x86_64-unknown-linux-gnu.tar.gz && tar -xf rtal-x86_64-unknown-linux-gnu.tar.gz && rm rtal-x86_64-unknown-linux-gnu.tar.gz && chmod +x rtal && cd ~
 ```
 - Per disinstallare rtal
 ```sh
