@@ -54,3 +54,7 @@ dove comando_esecuzione_binario può essere una tra le seguenti opzioni:
 ```sh
 rtal -s wss://ta.di.univr.it/algo connect nome_problema -f source=nome_sorgente
 ```
+**Per visualizzare il punteggio ottenuto dare:**
+```sh
+rtal -s wss://ta.di.univr.it/algo connect scoreboard
+```
